@@ -1,0 +1,29 @@
+#root,
+.App {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.demo-container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.column-right {
+  height: 100%;
+  width: 100%;
+}
+
+.tree-container {
+  height: 100%;
+  background: 'white'; /* fallback for old browsers */
+}
+
+.title {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
