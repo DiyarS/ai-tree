@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import { treeData } from './mockData';
-// import { Tree, treeUtil } from 'react-d3-tree';
 import { Tree } from '../react-d3-tree/lib/react-d3-tree';
 import './App.css';
-// import reactTree from './directory-trees/react-tree'
-// import scTree from './directory-trees/sc-tree'
 
 const shapes = {
   circle: {
@@ -51,7 +48,7 @@ class App extends Component {
       circleRadius: undefined,
       orientation: 'horizontal',
       translateX: 100,
-      translateY: 300,
+      translateY: 100,
       collapsible: true,
       initialDepth: 0,
       depthFactor: 200,
@@ -168,7 +165,7 @@ class App extends Component {
     const dimensions = this.treeContainer.getBoundingClientRect();
     this.setState({
       translateX: dimensions.width / 3,
-      translateY: dimensions.height / 2
+      translateY: dimensions.height / 3
     });
   }
 
